@@ -14,3 +14,84 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C4C4C4;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 12%; 
+}
+
+.navbar {
+  position: relative;
+  width: 100vw;
+  height: 120px;
+  background-color: #E1E1E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  background-color: #C4C4C4;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+}
+
+.heroImage {
+  width: 37%;
+  height: 37%;
+  background-color: #C4C4C4;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkGreyBack {
+  background-color: #A4A1A1;
+  width: 100vw;
+  height: 620px;
+}
+
+.imageBox {
+  width: 250px;
+  height: 250px;
+  background-color: #E1E1E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneOfThreeRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.threeRow {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly!important;
+}
+
+.subscription {
+  background-color: #C4C4C4;
+  width: 78%;
+  height: 5%;
+  border-radius: 10px;
+  margin: 1%;
+  margin-left: 3%;
+}
+
