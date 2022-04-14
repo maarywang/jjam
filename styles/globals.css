@@ -89,9 +89,11 @@ a {
 .subscription {
   background-color: #C4C4C4;
   width: 78%;
-  height: 5%;
+  height: 8%;
   border-radius: 10px;
   margin: 1%;
   margin-left: 3%;
+  display: flex;
 }
+
 
