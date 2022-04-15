@@ -96,4 +96,53 @@ a {
   display: flex;
 }
 
+.inbox {
+  height: 100vh;
+  width: 35%;
+  background-color: #E1E1E1;
+  padding-left: 2%;
+}
+.messages {
+  width: 65%;
+  height: 100vh;
+  background-color: #E1E1E1;
+
+}
+.message {
+  background: #C4C4C4;
+  color: black;
+  width: 90%;
+  height: 10%;  
+  border-radius: 10px;
+  margin: 2%;
+}
+.chat {
+  background-color: #C4C4C4;
+  height: 90%;
+  border-radius: 10px;
+  margin: 1%;
+  position: relative;
+  width: 95%
+}
+.pfp {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+}
+.text {
+  background: grey;
+  color: black;
+  text-transform: capitalize;
+  width: 70%;
+  height: 50%;
+  border-radius: 10px;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
 
