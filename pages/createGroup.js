@@ -19,8 +19,14 @@ export default function CreateGroup() {
     setChecked(event.target.checked);
   };
   return (
-    <div>
-      <div style={{ background: "#E1E1E1", height: "115vh" }}>
+    <div style={{ width: "100vw", height: "115vh" }}>
+      <div
+        style={{
+          background: "#E1E1E1",
+          height: "115vh",
+          width: "100vw",
+        }}
+      >
         <div style={{ position: "relative", width: "100%", height: "40%" }}>
           <div
             style={{
@@ -46,6 +52,9 @@ export default function CreateGroup() {
                 outline: "none",
               }}
             >
+              <option selected disabled>
+                Select Here...
+              </option>
               <option value="netflix">Netflix</option>
               <option value="spotify">Spotify</option>
               <option value="hbomax">HBO Max</option>
@@ -101,7 +110,8 @@ export default function CreateGroup() {
               top: "20%",
               paddingLeft: "20%",
               paddingRight: "20%",
-              margin: "2%",
+              marginTop: "1%",
+              marginBottom: "1%",
             }}
           >
             <p>Total number of Subscriptions Available:</p>
@@ -127,7 +137,8 @@ export default function CreateGroup() {
               top: "20%",
               paddingLeft: "20%",
               paddingRight: "20%",
-              margin: "2%",
+              marginTop: "2%",
+              marginBottom: "2%",
             }}
           >
             <p>Subscription Rate for 1 Person:</p>
@@ -153,7 +164,8 @@ export default function CreateGroup() {
               top: "20%",
               paddingLeft: "20%",
               paddingRight: "20%",
-              margin: "2%",
+              marginTop: "2%",
+              marginBottom: "2%",
             }}
           >
             <p>Is this account public or private?</p>
@@ -186,11 +198,15 @@ export default function CreateGroup() {
               top: "20%",
               paddingLeft: "20%",
               paddingRight: "20%",
-              margin: "2%",
+              marginTop: "2%",
+              marginBottom: "2%",
             }}
           >
             <p>Payment Date:</p>
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
+            <LocalizationProvider
+              dateAdapter={AdapterDateFns}
+              sx={{ backgroundColor: "pink" }}
+            >
               <DatePicker
                 label="Date"
                 value={value}
@@ -209,7 +225,8 @@ export default function CreateGroup() {
               top: "20%",
               paddingLeft: "20%",
               paddingRight: "20%",
-              margin: "2%",
+              marginTop: "2%",
+              marginBottom: "2%",
             }}
           >
             <Checkbox
@@ -227,7 +244,6 @@ export default function CreateGroup() {
               display: "flex",
               justifyContent: "center",
               width: "100%",
-              margin: "2%",
             }}
           >
             <Button
