@@ -20,25 +20,22 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #C4C4C4;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
   position: absolute;
-  left: 12%; 
+  left: 10%;
 }
 
 .navbar {
   position: relative;
   width: 100vw;
   height: 120px;
-  background-color: #E1E1E1;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bar {
-  background-color: #C4C4C4;
+  background-color: white;
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -59,15 +56,15 @@ a {
 }
 
 .darkGreyBack {
-  background-color: #A4A1A1;
+  background-color: white;
   width: 100vw;
-  height: 620px;
+  height: 820px;
 }
 
 .imageBox {
   width: 250px;
   height: 250px;
-  background-color: #E1E1E1;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,13 +74,44 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 25%;
+}
+
+.oneOfThreeRowTitle {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5%;
+  font-weight: 700;
+  font-size: 150%;
+}
+
+.oneOfThreeRowText {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  color: #5B5B5B;
 }
 
 .threeRow {
   width: 100vw;
   display: flex;
   justify-content: space-evenly!important;
+  padding-bottom: 10%
+}
+
+.blueRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 20%;
+}
+
+.blueRowText {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
 }
 
 .subscription {
