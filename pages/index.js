@@ -127,23 +127,38 @@ export default function Home() {
           alignItems: "center",
         }}
       >
-        <h1 style={{ margin: "0", fontWeight: "700", color: "white" }}>
+        <h1
+          style={{
+            margin: "0",
+            fontWeight: "700",
+            color: "white",
+            marginTop: "1%",
+            marginBottom: "3%",
+            fontSize: "300%",
+          }}
+        >
           Features
         </h1>
         <div className="blueRow">
           <div className="blueRowText">
-            <h1 style={{ color: "white" }}>PRICE BREAKDOWN</h1>
+            <h1 style={{ color: "white", fontWeight: "600" }}>
+              PRICE BREAKDOWN
+            </h1>
             <p style={{ color: "#D8D8D8" }}>
               A dashboard that includes your monthly subscription cost so you
               are always update on how much you are being charged
             </p>
           </div>
-          <div style={{ width: "30%" }}>img here</div>
+          <div style={{ width: "30%" }}>
+            <Image src="/TwoBox.png" width="550%" height="400%"></Image>
+          </div>
         </div>
         <div className="blueRow">
-          <div style={{ width: "30%" }}>img here</div>
+          <div style={{ width: "30%" }}>
+            <Image src="/autopayment.png" width="350%" height="300%"></Image>
+          </div>
           <div className="blueRowText">
-            <h1 style={{ color: "white" }}>AUTO PAYMENTS</h1>
+            <h1 style={{ color: "white", fontWeight: "600" }}>AUTO PAYMENTS</h1>
             <p style={{ color: "#D8D8D8" }}>
               Automatic payments so you never have to worry about forgetting to
               pay your portion of the subscription
@@ -152,13 +167,16 @@ export default function Home() {
         </div>
         <div className="blueRow">
           <div className="blueRowText">
-            <h1 style={{ color: "white" }}>MESSAGES</h1>
+            <h1 style={{ color: "white", fontWeight: "600" }}>MESSAGES</h1>
             <p style={{ color: "#D8D8D8" }}>
               A space where you can discuss with your group any updates
               regarding your subscription services or if you just want to chat!
             </p>
           </div>
-          <div style={{ width: "30%" }}>img here</div>
+          <div style={{ width: "30%" }}>
+            {" "}
+            <Image src="/ChatBoxes.png" width="500%" height="400%"></Image>
+          </div>
         </div>
       </div>
     </div>

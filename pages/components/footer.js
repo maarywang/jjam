@@ -25,9 +25,9 @@ export default function Footer() {
         }}
       >
         <Image
-          src="/footerLogo.jpg"
-          width="10px"
-          height="50px"
+          src="/footerLogo.png"
+          width="100%"
+          height="80%"
           style={{ backgroundColor: "black" }}
         ></Image>
       </div>
