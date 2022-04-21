@@ -37,10 +37,11 @@ export default function About() {
           </h1>
           <p style={{ fontSize: "150%", textAlign: "left" }}>
             SubMerge recognizes the increasingly expensive subscription services
-            that we all use and love. To help you manage that, we've created a
-            platform for you to find other people interested in splitting the
-            cost of subscription services with you, ultimately decreasing your
-            total cost while still providing you the same quality service.
+            that we all use and love. To help you manage that, we&apos;ve
+            created a platform for you to find other people interested in
+            splitting the cost of subscription services with you, ultimately
+            decreasing your total cost while still providing you the same
+            quality service.
           </p>
         </div>
         <div>
