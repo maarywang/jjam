@@ -143,19 +143,19 @@ export default function Home() {
         <div className="blueRow">
           <div style={{ width: "30%" }}>img here</div>
           <div className="blueRowText">
-            <h1 style={{ color: "white" }}>PRICE BREAKDOWN</h1>
+            <h1 style={{ color: "white" }}>AUTO PAYMENTS</h1>
             <p style={{ color: "#D8D8D8" }}>
-              A dashboard that includes your monthly subscription cost so you
-              are always update on how much you are being charged
+              Automatic payments so you never have to worry about forgetting to
+              pay your portion of the subscription
             </p>
           </div>
         </div>
         <div className="blueRow">
           <div className="blueRowText">
-            <h1 style={{ color: "white" }}>PRICE BREAKDOWN</h1>
+            <h1 style={{ color: "white" }}>MESSAGES</h1>
             <p style={{ color: "#D8D8D8" }}>
-              A dashboard that includes your monthly subscription cost so you
-              are always update on how much you are being charged
+              A space where you can discuss with your group any updates
+              regarding your subscription services or if you just want to chat!
             </p>
           </div>
           <div style={{ width: "30%" }}>img here</div>
