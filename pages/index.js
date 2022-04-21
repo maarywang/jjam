@@ -35,7 +35,7 @@ export default function Home() {
               fontSize: "400%",
             }}
           >
-            LET'S DIVE IN.
+            LET&apos;S DIVE IN.
           </h1>
           <p style={{ fontSize: "150%", textAlign: "right" }}>
             Making subscriptions affordable one connection at a time.
