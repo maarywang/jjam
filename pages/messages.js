@@ -1,22 +1,26 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import Button from "@mui/material/Button";
+
 export default function Messages() {
   return (
     <div>
       <div style={{ display: "flex" }}>
         <div className="inbox">
           <Button
-            style={{ color: "white", background: "#E1E1E1", margin: "1%" }}
+            style={{ color: "white", background: "#E1E1E1", margin: "4%" }}
           >
             Return to Profile
           </Button>
-
-          <p style={{ fontSize: "150%", margin: "2%" }}>Chats</p>
+          <FontAwesomeIcon icon="fa-solid fa-bars" />
+          <p style={{ fontSize: "150%", margin: "4%"}}>Chats</p>
           <input
-            placeholder="Subject"
+            placeholder="Search"
             type="text"
             style={{
-              background: "#C4C4C4",
+              background: "white",
               color: "black",
               textTransform: "capitalize",
               width: "90%",
@@ -25,7 +29,8 @@ export default function Messages() {
               border: "none",
               borderRadius: "20px",
               paddingLeft: "3%",
-              margin: "2%",
+              margin: "4%",
+              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
             }}
           ></input>
           <div className="message">
@@ -69,6 +74,7 @@ export default function Messages() {
               </p>
             </div>
           </div>
+          
           <div className="message">
             <div
               style={{
@@ -110,6 +116,7 @@ export default function Messages() {
               </p>
             </div>
           </div>
+
           <div className="message">
             <div
               style={{
@@ -222,22 +229,10 @@ export default function Messages() {
                 marginLeft: "37%",
               }}
             >
+              <div style={{ position: "absolute", right: "20%"}}>You</div>
               <div
                 style={{
-                  position: "absolute",
-                  right: "5%",
-                  backgroundColor: "white",
-                  height: "60px",
-                  width: "60px",
-                  borderRadius: "50%",
-                  right: "3%",
-                  top: "20%",
-                }}
-              ></div>
-              <div style={{ position: "absolute", right: "20%" }}>You</div>
-              <div
-                style={{
-                  background: "grey",
+                  background: "#0047AB",
                   height: "70%",
                   width: "70%",
                   borderRadius: "10px",
@@ -246,6 +241,7 @@ export default function Messages() {
                   right: "20%",
                 }}
               ></div>
+              <div className="pfp" style={{marginLeft: "83%"}}></div>
             </div>
             <div
               style={{
