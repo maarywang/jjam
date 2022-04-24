@@ -127,13 +127,47 @@ a {
 }
 
 .subscription {
-  background-color: #C4C4C4;
+  background-color: white;
   width: 78%;
-  height: 8%;
+  height: 10%;
   border-radius: 10px;
   margin: 1%;
   margin-left: 3%;
+  box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+.subService {
+  font-size: 200%;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 3%;
+  padding-top: 3%;
+}
+
+.subLowerContainer {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  height: 20%
+}
+
+.subscriptionJoinButton {
+  color: white;
+  background-color: #0066FF;
+  width: 10%;
+  height: 75%;
+  border-radius: 100px;
+  margin-top: 1%;
+  margin-right: 3%;
+}
+
+.subInternalContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  font-size: 90%;
+  position: relative;
 }
 
 .inbox {

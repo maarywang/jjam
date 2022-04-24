@@ -155,6 +155,7 @@ export default function About() {
             fontSize: "250%",
             color: "#0066FF",
             fontWeight: "700",
+            marginTop: "2%",
           }}
         >
           Meet The Team
@@ -273,8 +274,18 @@ export default function About() {
             Send us a message!
           </p>
           <TextField id="standard-basic" label="Name" variant="standard" />
-          <TextField id="standard-basic" label="Email" variant="standard" />
-          <TextField id="standard-basic" label="Message" variant="standard" />
+          <TextField
+            id="standard-basic"
+            label="Email"
+            variant="standard"
+            style={{ marginTop: "2%" }}
+          />
+          <TextField
+            id="standard-basic"
+            label="Message"
+            variant="standard"
+            style={{ marginTop: "2%" }}
+          />
           <Button
             variant="filled"
             style={{
