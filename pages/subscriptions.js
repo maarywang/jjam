@@ -84,7 +84,6 @@ export default function Subscriptions() {
           variant="filled"
           className="subscriptionJoinButton"
           onClick={handleClick}
-          style={{ fontSize: "80%" }}
         >
           JOIN
         </Button>
