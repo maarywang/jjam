@@ -152,16 +152,6 @@ a {
   height: 20%
 }
 
-.subscriptionJoinButton {
-  color: white;
-  background-color: #0066FF;
-  width: 10%;
-  height: 75%;
-  border-radius: 100px;
-  margin-top: 1%;
-  margin-right: 3%;
-  font-size: 75%;
-}
 
 .subInternalContainer {
   display: flex;

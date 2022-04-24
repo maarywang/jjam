@@ -82,8 +82,17 @@ export default function Subscriptions() {
         </div>
         <Button
           variant="filled"
-          className="subscriptionJoinButton"
           onClick={handleClick}
+          style={{
+            color: "white",
+            backgroundColor: "#0066FF",
+            width: " 10%",
+            height: "75%",
+            borderRadius: "100px",
+            marginTop: "1%",
+            marginRight: "3%",
+            fontSize: "75%",
+          }}
         >
           JOIN
         </Button>
