@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/router";
-import { auth } from "./firebase-config";
+import { auth } from "../firebase-config";
 
 export default function LogIn() {
   const [suEmail, setsuEmail] = useState("");
@@ -70,7 +70,7 @@ export default function LogIn() {
         }}
         onClick={handleSubmit}
       >
-        SIGN UP
+        LOG IN
       </Button>
     </div>
   );

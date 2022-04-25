@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { auth } from "./firebase-config";
+import { auth } from "../firebase-config";
 
 export default function Home() {
   const user = auth.currentUser;

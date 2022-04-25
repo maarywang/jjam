@@ -22,13 +22,20 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import LockIcon from "@mui/icons-material/Lock";
 import { useRouter } from "next/router";
-import { auth } from "./firebase-config";
+import { auth } from "../firebase-config";
 
 export default function Dashboard() {
   const [pop, setPop] = React.useState(false);
   const [mode, setPublic] = React.useState(false);
   const router = useRouter();
   const user = auth.currentUser;
+
+  let word = "";
+  if (user) {
+    word = user.email;
+  } else {
+    word = "user";
+  }
 
   const dashboard = () => {
     if (user) {
@@ -277,7 +284,7 @@ export default function Dashboard() {
         </Box>
       </div>
       <div style={{ width: "90%" }}>
-        <h1 style={{ margin: "0", marginLeft: "5%" }}>Hello, {user.email}</h1>
+        <h1 style={{ margin: "0", marginLeft: "5%" }}>Hello, {word}</h1>
         <h3 style={{ marginLeft: "5%" }}>Dashboard</h3>
         <div
           style={{

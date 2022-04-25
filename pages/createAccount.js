@@ -6,7 +6,7 @@ import LockIcon from "@mui/icons-material/Lock";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./firebase-config";
+import { auth } from "../firebase-config";
 import { useRouter } from "next/router";
 
 // too lazy to make the credit card portion actual inputs.. come back and fix if time later

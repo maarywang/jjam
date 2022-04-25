@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 import EmailIcon from "@mui/icons-material/Email";
 import { useRouter } from "next/router";
-import { auth } from "../firebase-config";
+import { auth } from "../../firebase-config";
 
 export default function BurgerMenu() {
   const [state, setState] = React.useState(false);
