@@ -21,10 +21,34 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import LockIcon from "@mui/icons-material/Lock";
+import { useRouter } from "next/router";
+import { auth } from "./firebase-config";
 
 export default function Dashboard() {
   const [pop, setPop] = React.useState(false);
   const [mode, setPublic] = React.useState(false);
+  const router = useRouter();
+  const user = auth.currentUser;
+
+  const dashboard = () => {
+    if (user) {
+      router.push("/dashboard");
+    } else {
+      router.push("/");
+    }
+  };
+
+  const discover = () => {
+    router.push("/subscriptions");
+  };
+
+  const messages = () => {
+    if (user) {
+      router.push("/messages");
+    } else {
+      router.push("/");
+    }
+  };
 
   const handlePublic = () => {
     mode ? setPublic(false) : setPublic(true);
@@ -229,11 +253,11 @@ export default function Dashboard() {
           }}
         >
           <List style={{ height: "100%", width: "100%" }}>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={dashboard}>
               <PieChartIcon></PieChartIcon>
               <p>Dashboard</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={discover}>
               <FindInPageIcon></FindInPageIcon>
               <p>Discover</p>
             </ListItem>
@@ -245,7 +269,7 @@ export default function Dashboard() {
               <ShowChartIcon></ShowChartIcon>
               <p>Activity</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={messages}>
               <EmailIcon></EmailIcon>
               <p>Message</p>
             </ListItem>
@@ -253,7 +277,7 @@ export default function Dashboard() {
         </Box>
       </div>
       <div style={{ width: "90%" }}>
-        <h1 style={{ margin: "0", marginLeft: "5%" }}>Hello, Jalen</h1>
+        <h1 style={{ margin: "0", marginLeft: "5%" }}>Hello, {user.email}</h1>
         <h3 style={{ marginLeft: "5%" }}>Dashboard</h3>
         <div
           style={{

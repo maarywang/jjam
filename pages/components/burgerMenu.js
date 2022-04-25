@@ -9,23 +9,46 @@ import PieChartIcon from "@mui/icons-material/PieChart";
 import Box from "@mui/material/Box";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 import EmailIcon from "@mui/icons-material/Email";
+import { useRouter } from "next/router";
+import { auth } from "../firebase-config";
 
 export default function BurgerMenu() {
-  const style = {
-    display: "flex",
-    flexDirection: "column",
-    height: "10%",
-    width: "100%",
-    marginTop: "20%",
-  };
   const [state, setState] = React.useState(false);
+  const router = useRouter();
+  const user = auth.currentUser;
 
+  const dashboard = () => {
+    if (user) {
+      router.push("/dashboard");
+    } else {
+      router.push("/");
+    }
+  };
+
+  const discover = () => {
+    router.push("/subscriptions");
+  };
+
+  const messages = () => {
+    if (user) {
+      router.push("/messages");
+    } else {
+      router.push("/");
+    }
+  };
   const toggleDrawer = () => {
     if (state === true) {
       setState(false);
     } else {
       setState(true);
     }
+  };
+  const style = {
+    display: "flex",
+    flexDirection: "column",
+    height: "10%",
+    width: "100%",
+    marginTop: "20%",
   };
   return (
     <div>
@@ -48,11 +71,11 @@ export default function BurgerMenu() {
           }}
         >
           <List style={{ height: "100%", width: "100%" }}>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={dashboard}>
               <PieChartIcon></PieChartIcon>
               <p>Dashboard</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={discover}>
               <FindInPageIcon></FindInPageIcon>
               <p>Discover</p>
             </ListItem>
@@ -64,7 +87,7 @@ export default function BurgerMenu() {
               <ShowChartIcon></ShowChartIcon>
               <p>Activity</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={messages}>
               <EmailIcon></EmailIcon>
               <p>Message</p>
             </ListItem>

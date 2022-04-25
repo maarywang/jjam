@@ -1,14 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Button from "@mui/material/Button";
 import BoltIcon from "@mui/icons-material/Bolt";
 import LockIcon from "@mui/icons-material/Lock";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "./firebase-config";
+import { useRouter } from "next/router";
 
 // too lazy to make the credit card portion actual inputs.. come back and fix if time later
 
 export default function CreateAccount() {
+  const [suEmail, setsuEmail] = useState("");
+  const [suPass, setsuPass] = useState("");
+  const router = useRouter();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    createUserWithEmailAndPassword(auth, suEmail, suPass)
+      .then((userCredential) => {
+        router.push("/dashboard");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
+  };
   return (
     <div
       style={{
@@ -98,6 +117,9 @@ export default function CreateAccount() {
             border: "1px solid gray",
             margin: "1%",
           }}
+          onChange={(e) => {
+            setsuEmail(e.target.value);
+          }}
         />
         <input
           type="text"
@@ -109,6 +131,9 @@ export default function CreateAccount() {
             border: "1px solid gray",
             marginTop: "2%",
           }}
+          onChange={(e) => {
+            setsuPass(e.target.value);
+          }}
         />
         <Image src="/card.svg" width="360%" height="360%"></Image>
         <Button
@@ -119,6 +144,7 @@ export default function CreateAccount() {
             backgroundColor: "#0066FF",
             borderRadius: "100px",
           }}
+          onClick={handleSubmit}
         >
           SIGN UP
         </Button>

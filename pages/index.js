@@ -1,8 +1,16 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { auth } from "./firebase-config";
 
 export default function Home() {
+  const user = auth.currentUser;
+  const router = useRouter();
+
+  const login = () => {
+    router.push("/logIn");
+  };
   return (
     <div>
       <div
@@ -49,8 +57,9 @@ export default function Home() {
               borderRadius: "78px",
               marginTop: "15%",
             }}
+            onClick={login}
           >
-            SIGN UP
+            {user ? "YOU R ALREADY LOGGED IN DONT CLICK LOL" : "LOG IN"}
           </Button>
         </div>
       </div>
