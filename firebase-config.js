@@ -15,7 +15,6 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_ID,
   measurementId: process.env.NEXT_PUBLIC_MEASURMENT_ID,
 };
-
 let app;
 
 if (getApps().length === 0) {
