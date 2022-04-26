@@ -25,12 +25,14 @@ export default function LogIn() {
     <div
       style={{
         width: "100vw",
+        height: "40vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         marginBottom: "10%",
       }}
     >
+      <h1>LOG IN.</h1>
       <input
         type="text"
         placeholder="Email"

@@ -468,11 +468,513 @@ export default function Dashboard() {
             />
           </FormGroup>
           {dialogue}
-          {subscriptionBox}
-          {subscriptionBox}
-          {subscriptionBox}
-          {subscriptionBox}
-          {subscriptionBox}
+          <div
+            className="subscription"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  marginLeft: "2%",
+                }}
+              >
+                <h3 className="subService">WSJ</h3>
+                {mode ? (
+                  <PublicIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></PublicIcon>
+                ) : (
+                  <LockIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></LockIcon>
+                )}
+              </div>
+              <div
+                style={{
+                  textAlign: "right",
+                  paddingTop: "3%",
+                  paddingRight: "3%",
+                }}
+              >
+                <h3
+                  style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}
+                >
+                  $2.26
+                </h3>
+                <p style={{ fontSize: "80%", margin: "0" }}>from $4/month</p>
+              </div>
+            </div>
+            <div className="subLowerContainer">
+              <div
+                className="subInternalContainer"
+                style={{ marginBottom: "1%" }}
+              >
+                <p>@donaldJ0b</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "25%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>3/4 Subscribed</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "60%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>expires 11/01/22</p>
+              </div>
+              <Button
+                variant="filled"
+                onClick={handleClick}
+                style={{
+                  color: "white",
+                  backgroundColor: "#0066FF",
+                  width: " 10%",
+                  height: "75%",
+                  borderRadius: "100px",
+                  marginTop: "1%",
+                  marginRight: "3%",
+                  fontSize: "70%",
+                  padding: "2px",
+                }}
+              >
+                JOIN
+              </Button>
+            </div>
+          </div>
+          <div
+            className="subscription"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  marginLeft: "2%",
+                  width: "40%",
+                }}
+              >
+                <h3 className="subService" style={{ width: "55%" }}>
+                  Amazon Prime
+                </h3>
+                {mode ? (
+                  <PublicIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></PublicIcon>
+                ) : (
+                  <LockIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></LockIcon>
+                )}
+              </div>
+              <div
+                style={{
+                  textAlign: "right",
+                  paddingTop: "3%",
+                  paddingRight: "3%",
+                }}
+              >
+                <h3
+                  style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}
+                >
+                  $24.26
+                </h3>
+                <p style={{ fontSize: "80%", margin: "0" }}>
+                  from $43.25/month
+                </p>
+              </div>
+            </div>
+            <div className="subLowerContainer">
+              <div
+                className="subInternalContainer"
+                style={{ marginBottom: "1%" }}
+              >
+                <p>@username</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "25%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>3/4 Subscribed</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "60%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>expires 09/18/23</p>
+              </div>
+              <Button
+                variant="filled"
+                onClick={handleClick}
+                style={{
+                  color: "white",
+                  backgroundColor: "#0066FF",
+                  width: " 10%",
+                  height: "75%",
+                  borderRadius: "100px",
+                  marginTop: "1%",
+                  marginRight: "3%",
+                  fontSize: "70%",
+                  padding: "2px",
+                }}
+              >
+                JOIN
+              </Button>
+            </div>
+          </div>
+          <div
+            className="subscription"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  marginLeft: "2%",
+                }}
+              >
+                <h3 className="subService">Hulu</h3>
+                {mode ? (
+                  <PublicIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></PublicIcon>
+                ) : (
+                  <LockIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></LockIcon>
+                )}
+              </div>
+              <div
+                style={{
+                  textAlign: "right",
+                  paddingTop: "3%",
+                  paddingRight: "3%",
+                }}
+              >
+                <h3
+                  style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}
+                >
+                  $4.26
+                </h3>
+                <p style={{ fontSize: "80%", margin: "0" }}>from $5/month</p>
+              </div>
+            </div>
+            <div className="subLowerContainer">
+              <div
+                className="subInternalContainer"
+                style={{ marginBottom: "1%" }}
+              >
+                <p>@mort136</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "25%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>4/6 Subscribed</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "60%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>expires 08/12/22</p>
+              </div>
+              <Button
+                variant="filled"
+                onClick={handleClick}
+                style={{
+                  color: "white",
+                  backgroundColor: "#0066FF",
+                  width: " 10%",
+                  height: "75%",
+                  borderRadius: "100px",
+                  marginTop: "1%",
+                  marginRight: "3%",
+                  fontSize: "70%",
+                  padding: "2px",
+                }}
+              >
+                JOIN
+              </Button>
+            </div>
+          </div>
+          <div
+            className="subscription"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  marginLeft: "2%",
+                }}
+              >
+                <h3 className="subService">Office365</h3>
+                {mode ? (
+                  <PublicIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></PublicIcon>
+                ) : (
+                  <LockIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></LockIcon>
+                )}
+              </div>
+              <div
+                style={{
+                  textAlign: "right",
+                  paddingTop: "3%",
+                  paddingRight: "3%",
+                }}
+              >
+                <h3
+                  style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}
+                >
+                  $34
+                </h3>
+                <p style={{ fontSize: "80%", margin: "0" }}>from $46/month</p>
+              </div>
+            </div>
+            <div className="subLowerContainer">
+              <div
+                className="subInternalContainer"
+                style={{ marginBottom: "1%" }}
+              >
+                <p>@j03s3ph</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "25%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>2/3 Subscribed</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "60%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>expires 07/24/25</p>
+              </div>
+              <Button
+                variant="filled"
+                onClick={handleClick}
+                style={{
+                  color: "white",
+                  backgroundColor: "#0066FF",
+                  width: " 10%",
+                  height: "75%",
+                  borderRadius: "100px",
+                  marginTop: "1%",
+                  marginRight: "3%",
+                  fontSize: "70%",
+                  padding: "2px",
+                }}
+              >
+                JOIN
+              </Button>
+            </div>
+          </div>
+          <div
+            className="subscription"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  marginLeft: "2%",
+                }}
+              >
+                <h3 className="subService">AppleTV</h3>
+                {mode ? (
+                  <PublicIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></PublicIcon>
+                ) : (
+                  <LockIcon
+                    style={{
+                      fontSize: "100%",
+                      marginLeft: "5%",
+                      marginTop: "5%",
+                    }}
+                  ></LockIcon>
+                )}
+              </div>
+              <div
+                style={{
+                  textAlign: "right",
+                  paddingTop: "3%",
+                  paddingRight: "3%",
+                }}
+              >
+                <h3
+                  style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}
+                >
+                  $9.13
+                </h3>
+                <p style={{ fontSize: "80%", margin: "0" }}>
+                  from $14.10/month
+                </p>
+              </div>
+            </div>
+            <div className="subLowerContainer">
+              <div
+                className="subInternalContainer"
+                style={{ marginBottom: "1%" }}
+              >
+                <p>@j0nny</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "25%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>1/4 Subscribed</p>
+                <FiberManualRecordIcon
+                  style={{
+                    width: "10%",
+                    fontSize: "50%",
+                    position: "absolute",
+                    top: "45%",
+                    left: "60%",
+                  }}
+                ></FiberManualRecordIcon>
+                <p>expires 12/01/24</p>
+              </div>
+              <Button
+                variant="filled"
+                onClick={handleClick}
+                style={{
+                  color: "white",
+                  backgroundColor: "#0066FF",
+                  width: " 10%",
+                  height: "75%",
+                  borderRadius: "100px",
+                  marginTop: "1%",
+                  marginRight: "3%",
+                  fontSize: "70%",
+                  padding: "2px",
+                }}
+              >
+                JOIN
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
