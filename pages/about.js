@@ -2,35 +2,25 @@ import React, { useRef } from "react";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import TextField from "@mui/material/TextField";
-import emailjs from "@emailjs/browser";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function About() {
-  const [status, setStatus] = React.useState("Submit");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-  const [name, setName] = React.useState("");
-
-  const form = useRef();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_jihoq16",
-        "template_ha4cxbh",
-        form.current,
-        "_5DlosTPu3Q4p-jVr"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  const [state, handleSubmit] = useForm("xjvlpyee");
+  if (state.succeeded) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          fontWeight: "500",
+          margin: "5%",
+          height: "50vh",
+        }}
+      >
+        <p>Thanks for leaving a message!</p>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -322,7 +312,6 @@ export default function About() {
             Send us a message!
           </p>
           <form
-            ref={form}
             onSubmit={handleSubmit}
             style={{
               display: "flex",
@@ -334,9 +323,6 @@ export default function About() {
               id="standard-basic"
               label="Name"
               variant="standard"
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
             />
             <TextField
               name="email"
@@ -344,9 +330,12 @@ export default function About() {
               label="Email"
               variant="standard"
               style={{ marginTop: "2%" }}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+              style={{ color: "red", fontSize: "50%", marginTop: "1%" }}
             />
             <TextField
               name="message"
@@ -354,9 +343,12 @@ export default function About() {
               label="Message"
               variant="standard"
               style={{ marginTop: "2%" }}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+              style={{ color: "red", fontSize: "50%", marginTop: "1%" }}
             />
             <Button
               type="submit"
@@ -368,8 +360,9 @@ export default function About() {
                 borderRadius: "0",
               }}
               onSubmit={handleSubmit}
+              disabled={state.submitting}
             >
-              {status}
+              SUBMIT
             </Button>
           </form>
         </div>
