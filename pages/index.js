@@ -192,8 +192,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ width: "30%" }}>
-            {" "}
-            <Image src="/ChatBoxes.png" width="500%" height="400%"></Image>
+            <Image src="/ChatBoxes.svg" width="500%" height="400%"></Image>
           </div>
         </div>
       </div>
