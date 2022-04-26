@@ -28,7 +28,12 @@ export default function Home() {
         }}
       >
         <div style={{ paddingLeft: "5%" }}>
-          <Image src="/standing-4.jpg" height="300%" width="250%"></Image>
+          <Image
+            src="/standing-4.jpg"
+            height="300%"
+            width="250%"
+            alt="standing"
+          ></Image>
         </div>
         <div
           style={{
@@ -105,7 +110,12 @@ export default function Home() {
         <div className="threeRow">
           <div className="oneOfThreeRow">
             <div className="imageBox">
-              <Image src="/Vector.jpg" width="120%" height="120%"></Image>
+              <Image
+                src="/Vector.jpg"
+                width="120%"
+                height="120%"
+                alt="vector"
+              ></Image>
             </div>
             <p className="oneOfThreeRowTitle">Information</p>
             <p className="oneOfThreeRowText">
@@ -115,7 +125,7 @@ export default function Home() {
           </div>
           <div className="oneOfThreeRow">
             <div className="imageBox">
-              <Image src="/id.jpg" width="150%" height="120%"></Image>
+              <Image src="/id.jpg" width="150%" height="120%" alt="id"></Image>
             </div>
             <p className="oneOfThreeRowTitle">Identity Check</p>
             <p className="oneOfThreeRowText">
@@ -125,7 +135,12 @@ export default function Home() {
           </div>
           <div className="oneOfThreeRow">
             <div className="imageBox">
-              <Image src="/card.jpg" width="150%" height="120%"></Image>
+              <Image
+                src="/card.jpg"
+                width="150%"
+                height="120%"
+                alt="payment"
+              ></Image>
             </div>
             <p className="oneOfThreeRowTitle">Payment</p>
             <p className="oneOfThreeRowText">
@@ -168,12 +183,22 @@ export default function Home() {
             </p>
           </div>
           <div style={{ width: "30%" }}>
-            <Image src="/TwoBox.png" width="550%" height="400%"></Image>
+            <Image
+              src="/TwoBox.png"
+              width="550%"
+              height="400%"
+              alt="twoboxes"
+            ></Image>
           </div>
         </div>
         <div className="blueRow">
           <div style={{ width: "30%" }}>
-            <Image src="/autopayment.png" width="350%" height="300%"></Image>
+            <Image
+              src="/autopayment.png"
+              width="350%"
+              height="300%"
+              alt="card"
+            ></Image>
           </div>
           <div className="blueRowText">
             <h1 style={{ color: "white", fontWeight: "600" }}>AUTO PAYMENTS</h1>
@@ -192,7 +217,12 @@ export default function Home() {
             </p>
           </div>
           <div style={{ width: "30%" }}>
-            <Image src="/ChatBoxes.svg" width="500%" height="400%"></Image>
+            <Image
+              src="/ChatBoxes.svg"
+              width="500%"
+              height="400%"
+              alt="chats"
+            ></Image>
           </div>
         </div>
       </div>
