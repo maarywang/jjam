@@ -37,6 +37,21 @@ export default function Dashboard() {
     word = "user";
   }
 
+  const payments = () => {
+    if (user) {
+      router.push("/paymentHistory");
+    } else {
+      router.push("/");
+    }
+  };
+
+  const activity = () => {
+    if (user) {
+      router.push("/activity");
+    } else {
+      router.push("/");
+    }
+  };
   const dashboard = () => {
     if (user) {
       router.push("/dashboard");
@@ -268,11 +283,11 @@ export default function Dashboard() {
               <FindInPageIcon></FindInPageIcon>
               <p>Discover</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={payments}>
               <PaymentIcon></PaymentIcon>
               <p>Payments</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={activity}>
               <ShowChartIcon></ShowChartIcon>
               <p>Activity</p>
             </ListItem>

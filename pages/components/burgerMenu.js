@@ -25,6 +25,22 @@ export default function BurgerMenu() {
     }
   };
 
+  const payments = () => {
+    if (user) {
+      router.push("/paymentHistory");
+    } else {
+      router.push("/");
+    }
+  };
+
+  const activity = () => {
+    if (user) {
+      router.push("/activity");
+    } else {
+      router.push("/");
+    }
+  };
+
   const discover = () => {
     router.push("/subscriptions");
   };
@@ -79,11 +95,11 @@ export default function BurgerMenu() {
               <FindInPageIcon></FindInPageIcon>
               <p>Discover</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={payments}>
               <PaymentIcon></PaymentIcon>
               <p>Payments</p>
             </ListItem>
-            <ListItem style={style}>
+            <ListItem style={style} onClick={activity}>
               <ShowChartIcon></ShowChartIcon>
               <p>Activity</p>
             </ListItem>

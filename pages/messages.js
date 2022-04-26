@@ -279,9 +279,19 @@ export default function Messages() {
               <div style={{ position: "absolute", left: "20%" }}>Mary</div>
               <div
                 className="text"
-                style={{ backgroundColor: "#D3D3D3", textAlign: "center" }}
+                style={{
+                  backgroundColor: "#D3D3D3",
+                  textAlign: "center",
+                }}
               >
-                <p style={{ fontSize: "110%" }}>
+                <p
+                  style={{
+                    fontSize: "110%",
+                    textTransform: "none",
+                    textAlign: "left",
+                    margin: "5%",
+                  }}
+                >
                   Hi I saw your request to join the group!
                 </p>
               </div>
@@ -307,7 +317,9 @@ export default function Messages() {
                   textAlign: "center",
                 }}
               >
-                <p style={{ fontSize: "110%", margin: "5%" }}>
+                <p
+                  style={{ fontSize: "110%", margin: "5%", textAlign: "left" }}
+                >
                   Hi thanks for responding! Yes I&apos;m interested in joining.
                   Would you let me know a little about your group?
                 </p>
@@ -351,7 +363,14 @@ export default function Messages() {
                   textAlign: "center",
                 }}
               >
-                <p style={{ fontSize: "110%", margin: "5%" }}>
+                <p
+                  style={{
+                    fontSize: "110%",
+                    margin: "5%",
+                    textAlign: "left",
+                    textTransform: "none",
+                  }}
+                >
                   Yeah of course, so we&apos;re a group of college students
                   trying to save money for spotify. We&apos;re going to try to
                   have this plan for the next year or two.
@@ -372,6 +391,7 @@ export default function Messages() {
                 borderRadius: "20px",
                 paddingLeft: "3%",
                 margin: "4%",
+                marginTop: "10%",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
               }}
