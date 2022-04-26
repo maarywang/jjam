@@ -24,23 +24,16 @@ export default function Home() {
           height: "500px",
           display: "flex",
           justifyContent: "space-evenly",
-          marginTop: "10%",
+          marginTop: "5%",
+          marginBottom: "5%",
         }}
       >
-        <div style={{ paddingLeft: "5%" }}>
-          <Image
-            src="/standing-4.jpg"
-            height="300%"
-            width="250%"
-            alt="standing"
-          ></Image>
-        </div>
         <div
           style={{
             width: "40%",
             display: "flex",
             flexDirection: "column",
-            alignItems: "flex-end",
+            alignItems: "flex-start",
             paddingRight: "5%",
           }}
         >
@@ -49,14 +42,14 @@ export default function Home() {
               margin: "0",
               fontWeight: "700",
               width: "100%",
-              textAlign: "right",
-              fontSize: "400%",
+              textAlign: "left",
+              fontSize: "380%",
             }}
           >
-            LET&apos;S DIVE IN.
+            Dive into your next subscription. Stress free.
           </h1>
-          <p style={{ fontSize: "150%", textAlign: "right" }}>
-            Making subscriptions affordable one connection at a time.
+          <p style={{ fontSize: "150%", textAlign: "left" }}>
+            An all-inclusive platform that handles all things subscriptions.
           </p>
           {loggedin ? (
             ""
@@ -75,6 +68,14 @@ export default function Home() {
               {user ? "YOU R ALREADY LOGGED IN DONT CLICK LOL" : "LOG IN"}
             </Button>
           )}
+        </div>
+        <div style={{ paddingLeft: "5%" }}>
+          <Image
+            src="/standing-4.jpg"
+            height="300%"
+            width="250%"
+            alt="standing"
+          ></Image>
         </div>
       </div>
       <div
