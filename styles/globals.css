@@ -164,30 +164,34 @@ a {
 .inbox {
   height: 100vh;
   width: 35%;
-  background-color: #E1E1E1;
+  background-color: white;
   padding-left: 2%;
 }
 .messages {
   width: 65%;
   height: 100vh;
-  background-color: #E1E1E1;
+  background-color: white;
 
 }
 .message {
-  background: #C4C4C4;
+  background: white;
   color: black;
   width: 90%;
-  height: 10%;  
+  height: 12%;  
   border-radius: 10px;
   margin: 2%;
+  margin-left: 5%;
+  margin-bottom: 6%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .chat {
-  background-color: #C4C4C4;
+  background-color: white;
   height: 90%;
   border-radius: 10px;
   margin: 1%;
   position: relative;
-  width: 95%
+  width: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .pfp {
   background-color: white;
@@ -214,4 +218,26 @@ a {
   background-color: #C4C4C4;
 }
 
+.notice {
+  font-size: 150%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4%;
+  display: flex;
+}
+
+.wallet {
+  width: 30em;
+  height: 8em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.history {
+  width: 65em;
+  height: 200%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
 
