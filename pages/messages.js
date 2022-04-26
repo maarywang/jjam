@@ -21,11 +21,10 @@ export default function Messages() {
   return (
     <div>
       <BurgerMenu></BurgerMenu>
-      <div style={{ display: "flex", marginLeft: "2%"}}>
+      <div style={{ display: "flex", marginLeft: "2%" }}>
         <div className="inbox">
-          
           <FontAwesomeIcon icon="fa-solid fa-bars" />
-          <p style={{ fontSize: "150%", margin: "4%"}}>Chats</p>
+          <p style={{ fontSize: "150%", margin: "4%" }}>Chats</p>
           <input
             placeholder="Search"
             type="text"
@@ -40,10 +39,11 @@ export default function Messages() {
               borderRadius: "20px",
               paddingLeft: "3%",
               margin: "4%",
-              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+              boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
             }}
           ></input>
-          <div className="message" style={{backgroundColor: "#0066FF"}}>
+          <div className="message" style={{ backgroundColor: "#0066FF" }}>
             <div
               style={{
                 width: "100%",
@@ -59,7 +59,7 @@ export default function Messages() {
                   left: "3%",
                 }}
               >
-                Mary's Group 
+                Mary&apos;s Group
               </p>
               <p
                 style={{
@@ -70,7 +70,7 @@ export default function Messages() {
                   left: "3%",
                 }}
               >
-                Yeah of course, so we're a group...
+                Yeah of course, so we&apos;re a group...
               </p>
               <p
                 style={{
@@ -100,7 +100,7 @@ export default function Messages() {
                   left: "3%",
                 }}
               >
-                Jonathan's Group
+                Jonathan&apos;s Group
               </p>
               <p
                 style={{
@@ -141,7 +141,7 @@ export default function Messages() {
                   left: "3%",
                 }}
               >
-                Amy's Group
+                Amy&apos;s Group
               </p>
               <p
                 style={{
@@ -194,7 +194,7 @@ export default function Messages() {
                   left: "3%",
                 }}
               >
-                just a reminder it's due tomorrow
+                just a reminder it&apos;s due tomorrow
               </p>
               <p
                 style={{
@@ -251,9 +251,9 @@ export default function Messages() {
           </div>
         </div>
         <div className="messages">
-          <div className="chat" style={{height: "94%"}}>
+          <div className="chat" style={{ height: "94%" }}>
             <p style={{ fontSize: "150%", paddingTop: "4%", marginLeft: "5%" }}>
-              Mary's Group
+              Mary&apos;s Group
             </p>
             <hr style={{ border: "1px solid grey", width: "90%" }} />
             <div
@@ -267,10 +267,21 @@ export default function Messages() {
                 marginTop: "5%",
               }}
             >
-              <img src="/mary.png" style={{width: "13%", height: "50%", marginLeft: "5%", marginTop: "5%"}}></img>
-              <div style={{ position: "absolute", left: "20%"}}>Mary</div>
-              <div className="text" style={{backgroundColor: "#D3D3D3", textAlign: "center"}}>
-                <p style={{fontSize: "110%"}}>
+              <img
+                src="/mary.png"
+                style={{
+                  width: "13%",
+                  height: "50%",
+                  marginLeft: "5%",
+                  marginTop: "5%",
+                }}
+              ></img>
+              <div style={{ position: "absolute", left: "20%" }}>Mary</div>
+              <div
+                className="text"
+                style={{ backgroundColor: "#D3D3D3", textAlign: "center" }}
+              >
+                <p style={{ fontSize: "110%" }}>
                   Hi I saw your request to join the group!
                 </p>
               </div>
@@ -283,7 +294,7 @@ export default function Messages() {
                 marginLeft: "37%",
               }}
             >
-              <div style={{ position: "absolute", right: "20%"}}>Jalen</div>
+              <div style={{ position: "absolute", right: "20%" }}>Jalen</div>
               <div
                 style={{
                   background: "#0066FF",
@@ -293,14 +304,23 @@ export default function Messages() {
                   position: "absolute",
                   top: "20%",
                   right: "20%",
-                  textAlign: "center"
+                  textAlign: "center",
                 }}
               >
-                <p style={{fontSize: "110%", margin: "5%"}}>
-                Hi thanks for responding! Yes I'm interested in joining. Would you let me know a little about your group?
+                <p style={{ fontSize: "110%", margin: "5%" }}>
+                  Hi thanks for responding! Yes I&apos;m interested in joining.
+                  Would you let me know a little about your group?
                 </p>
               </div>
-              <img src="/jalen.png" style={{width: "13%", height: "50%", marginLeft: "83%", marginTop: "5%"}}></img>
+              <img
+                src="/jalen.png"
+                style={{
+                  width: "13%",
+                  height: "50%",
+                  marginLeft: "83%",
+                  marginTop: "5%",
+                }}
+              ></img>
             </div>
             <div
               style={{
@@ -313,31 +333,49 @@ export default function Messages() {
                 marginTop: "2%",
               }}
             >
-              <img src="/mary.png" style={{width: "13%", height: "50%", marginLeft: "5%", marginTop: "2%"}}></img>
+              <img
+                src="/mary.png"
+                style={{
+                  width: "13%",
+                  height: "50%",
+                  marginLeft: "5%",
+                  marginTop: "2%",
+                }}
+              ></img>
               <div style={{ position: "absolute", left: "20%" }}>Mary</div>
-              <div className="text" style={{ height: "90%", backgroundColor: "#D3D3D3", textAlign: "center"}}>
-                <p style={{fontSize: "110%", margin: "5%"}}>
-                  Yeah of course, so we're a group of college students trying to save money for spotify. We're going to try to have this plan for the next year or two.
+              <div
+                className="text"
+                style={{
+                  height: "90%",
+                  backgroundColor: "#D3D3D3",
+                  textAlign: "center",
+                }}
+              >
+                <p style={{ fontSize: "110%", margin: "5%" }}>
+                  Yeah of course, so we&apos;re a group of college students
+                  trying to save money for spotify. We&apos;re going to try to
+                  have this plan for the next year or two.
                 </p>
               </div>
             </div>
             <input
-            placeholder="Message"
-            type="text"
-            style={{
-              background: "#D3D3D3",
-              color: "black",
-              textTransform: "capitalize",
-              width: "92%",
-              height: "6%",
-              outline: "none",
-              border: "none",
-              borderRadius: "20px",
-              paddingLeft: "3%",
-              margin: "4%",
-              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-            }}
-          ></input>
+              placeholder="Message"
+              type="text"
+              style={{
+                background: "#D3D3D3",
+                color: "black",
+                textTransform: "capitalize",
+                width: "92%",
+                height: "6%",
+                outline: "none",
+                border: "none",
+                borderRadius: "20px",
+                paddingLeft: "3%",
+                margin: "4%",
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+              }}
+            ></input>
           </div>
         </div>
       </div>
