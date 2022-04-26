@@ -25,10 +25,11 @@ export default function Footer() {
         }}
       >
         <Image
-          src="/footerLogo.png"
-          width="100%"
-          height="80%"
+          src="/footerLogo.svg"
+          width="400%"
+          height="200%"
           style={{ backgroundColor: "black" }}
+          alt="footerLogo"
         ></Image>
       </div>
       <div
