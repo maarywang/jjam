@@ -19,7 +19,11 @@ export default function Navbar() {
       });
   };
   const handleClick = () => {
-    router.push("/");
+    if (user) {
+      router.push("/dashboard");
+    } else {
+      router.push("/");
+    }
   };
 
   if (user) {
