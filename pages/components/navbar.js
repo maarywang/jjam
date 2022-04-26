@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="navbar">
         <div className="logo">
           <Image
-            src="/logo.jpeg"
+            src="/logo.svg"
             width="200%"
             height="50%"
             onClick={handleClick}
