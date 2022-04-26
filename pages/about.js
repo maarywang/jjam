@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import TextField from "@mui/material/TextField";
+import emailjs from "@emailjs/browser";
 
 export default function About() {
+  const [status, setStatus] = React.useState("Submit");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [name, setName] = React.useState("");
+
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_jihoq16",
+        "template_ha4cxbh",
+        form.current,
+        "_5DlosTPu3Q4p-jVr"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <div
@@ -108,7 +136,7 @@ export default function About() {
             <div className="imageBox">
               <Image src="/transparency.png" width="150%" height="150%"></Image>
             </div>
-            <p className="coreValuesTitle">Transparency</p>
+            <p className="coreValuesTitle">No More Surprise Charges</p>
             <p className="coreValuesText">
               Up to date information surrounding your subscription cost
             </p>
@@ -117,7 +145,7 @@ export default function About() {
             <div className="imageBox">
               <Image src="/organization.png" width="150%" height="150%"></Image>
             </div>
-            <p className="coreValuesTitle">Organization</p>
+            <p className="coreValuesTitle">Hassle Free Payments</p>
             <p className="coreValuesText">
               A central place to keep track of payments of the subscription
               services that you share
@@ -131,7 +159,7 @@ export default function About() {
                 height="150%"
               ></Image>
             </div>
-            <p className="coreValuesTitle">Accessibility</p>
+            <p className="coreValuesTitle">Subscriptions At Your Fingertips</p>
             <p className="coreValuesText">
               Significantly decrease the cost of subscription services so
               everyone has access to services that they want
@@ -177,7 +205,11 @@ export default function About() {
               Jalen Layfield
             </p>
             <p
-              style={{ color: "#0066FF", fontWeight: "600", fontSize: "100%" }}
+              style={{
+                color: "#0066FF",
+                fontWeight: "600",
+                fontSize: "100%",
+              }}
             >
               PRODUCT MANAGER
             </p>
@@ -198,7 +230,11 @@ export default function About() {
               Jonathan Phan
             </p>
             <p
-              style={{ color: "#0066FF", fontWeight: "600", fontSize: "100%" }}
+              style={{
+                color: "#0066FF",
+                fontWeight: "600",
+                fontSize: "100%",
+              }}
             >
               DEVELOPER
             </p>
@@ -219,7 +255,11 @@ export default function About() {
               Mary Wang
             </p>
             <p
-              style={{ color: "#0066FF", fontWeight: "600", fontSize: "100%" }}
+              style={{
+                color: "#0066FF",
+                fontWeight: "600",
+                fontSize: "100%",
+              }}
             >
               DEVELOPER
             </p>
@@ -240,7 +280,11 @@ export default function About() {
               Amy La
             </p>
             <p
-              style={{ color: "#0066FF", fontWeight: "600", fontSize: "100%" }}
+              style={{
+                color: "#0066FF",
+                fontWeight: "600",
+                fontSize: "100%",
+              }}
             >
               DESIGNER
             </p>
@@ -265,7 +309,11 @@ export default function About() {
           }}
         >
           <h1
-            style={{ fontWeight: "700", fontSize: " 250%", marginBottom: "2%" }}
+            style={{
+              fontWeight: "700",
+              fontSize: " 250%",
+              marginBottom: "2%",
+            }}
           >
             Get in touch
           </h1>
@@ -273,30 +321,57 @@ export default function About() {
             Want to learn more about SubMerge or have other burning questions?
             Send us a message!
           </p>
-          <TextField id="standard-basic" label="Name" variant="standard" />
-          <TextField
-            id="standard-basic"
-            label="Email"
-            variant="standard"
-            style={{ marginTop: "2%" }}
-          />
-          <TextField
-            id="standard-basic"
-            label="Message"
-            variant="standard"
-            style={{ marginTop: "2%" }}
-          />
-          <Button
-            variant="filled"
+          <form
+            ref={form}
+            onSubmit={handleSubmit}
             style={{
-              color: "white",
-              backgroundColor: "black",
-              marginTop: "20%",
-              borderRadius: "0",
+              display: "flex",
+              flexDirection: "column",
             }}
           >
-            Send
-          </Button>
+            <TextField
+              name="name"
+              id="standard-basic"
+              label="Name"
+              variant="standard"
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+            />
+            <TextField
+              name="email"
+              id="standard-basic"
+              label="Email"
+              variant="standard"
+              style={{ marginTop: "2%" }}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
+            <TextField
+              name="message"
+              id="standard-basic"
+              label="Message"
+              variant="standard"
+              style={{ marginTop: "2%" }}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+            />
+            <Button
+              type="submit"
+              variant="filled"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                marginTop: "20%",
+                borderRadius: "0",
+              }}
+              onSubmit={handleSubmit}
+            >
+              {status}
+            </Button>
+          </form>
         </div>
         <div
           style={{ width: "30%", height: "100%", backgroundColor: "#0066FF" }}

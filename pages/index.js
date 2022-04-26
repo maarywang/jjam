@@ -6,11 +6,16 @@ import { auth } from "../firebase-config";
 
 export default function Home() {
   const user = auth.currentUser;
+  var loggedin = false;
+  if (user) {
+    loggedin = true;
+  }
   const router = useRouter();
 
   const login = () => {
     router.push("/logIn");
   };
+
   return (
     <div>
       <div
@@ -48,19 +53,23 @@ export default function Home() {
           <p style={{ fontSize: "150%", textAlign: "right" }}>
             Making subscriptions affordable one connection at a time.
           </p>
-          <Button
-            variant="filled"
-            style={{
-              backgroundColor: "black",
-              color: "white",
-              width: "50%",
-              borderRadius: "78px",
-              marginTop: "15%",
-            }}
-            onClick={login}
-          >
-            {user ? "YOU R ALREADY LOGGED IN DONT CLICK LOL" : "LOG IN"}
-          </Button>
+          {loggedin ? (
+            ""
+          ) : (
+            <Button
+              variant="filled"
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                width: "50%",
+                borderRadius: "78px",
+                marginTop: "15%",
+              }}
+              onClick={login}
+            >
+              {user ? "YOU R ALREADY LOGGED IN DONT CLICK LOL" : "LOG IN"}
+            </Button>
+          )}
         </div>
       </div>
       <div
