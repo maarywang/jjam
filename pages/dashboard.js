@@ -143,7 +143,7 @@ export default function Dashboard() {
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
           <div style={{ width: "40%" }}>
             <h4>Available Subscriptions</h4>
-            <Image src="/numAvil.svg" width="200%" height="200%"></Image>
+            <Image src="/numAvail.svg" width="200%" height="200%"></Image>
           </div>
           <div style={{ width: "40%" }}>
             <h4>Group Status</h4>
@@ -173,95 +173,6 @@ export default function Dashboard() {
     </Dialog>
   );
 
-  const subscriptionBox = (
-    <div
-      className="subscription"
-      style={{ marginLeft: "auto", marginRight: "auto" }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "100%",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            marginLeft: "2%",
-          }}
-        >
-          <h3 className="subService">Service</h3>
-          {mode ? (
-            <PublicIcon
-              style={{ fontSize: "100%", marginLeft: "5%", marginTop: "5%" }}
-            ></PublicIcon>
-          ) : (
-            <LockIcon
-              style={{ fontSize: "100%", marginLeft: "5%", marginTop: "5%" }}
-            ></LockIcon>
-          )}
-        </div>
-        <div
-          style={{
-            textAlign: "right",
-            paddingTop: "3%",
-            paddingRight: "3%",
-          }}
-        >
-          <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
-            $4.26
-          </h3>
-          <p style={{ fontSize: "80%", margin: "0" }}>from $5/month</p>
-        </div>
-      </div>
-      <div className="subLowerContainer">
-        <div className="subInternalContainer" style={{ marginBottom: "1%" }}>
-          <p>@username</p>
-          <FiberManualRecordIcon
-            style={{
-              width: "10%",
-              fontSize: "50%",
-              position: "absolute",
-              top: "45%",
-              left: "25%",
-            }}
-          ></FiberManualRecordIcon>
-          <p>4/6 Subscribed</p>
-          <FiberManualRecordIcon
-            style={{
-              width: "10%",
-              fontSize: "50%",
-              position: "absolute",
-              top: "45%",
-              left: "60%",
-            }}
-          ></FiberManualRecordIcon>
-          <p>expires 01/01/02</p>
-        </div>
-        <Button
-          variant="filled"
-          onClick={handleClick}
-          style={{
-            color: "white",
-            backgroundColor: "#0066FF",
-            width: " 10%",
-            height: "75%",
-            borderRadius: "100px",
-            marginTop: "1%",
-            marginRight: "3%",
-            fontSize: "70%",
-            padding: "2px",
-          }}
-        >
-          JOIN
-        </Button>
-      </div>
-    </div>
-  );
   return (
     <div style={{ width: "100vw", display: "flex", justifyContent: "center" }}>
       <div style={{ width: "10%" }}>
@@ -471,6 +382,7 @@ export default function Dashboard() {
           <div
             className="subscription"
             style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handleClick}
           >
             <div
               style={{
@@ -554,7 +466,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#0066FF",
+                  backgroundColor: "#A2A4A7",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -564,13 +476,14 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                JOIN
+                Leave
               </Button>
             </div>
           </div>
           <div
             className="subscription"
             style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handleClick}
           >
             <div
               style={{
@@ -589,7 +502,10 @@ export default function Dashboard() {
                   width: "40%",
                 }}
               >
-                <h3 className="subService" style={{ width: "55%" }}>
+                <h3
+                  className="subService"
+                  style={{ width: "55%", paddingLeft: "1%" }}
+                >
                   Amazon Prime
                 </h3>
                 {mode ? (
@@ -659,7 +575,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#0066FF",
+                  backgroundColor: "#A2A4A7",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -669,13 +585,14 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                JOIN
+                Leave
               </Button>
             </div>
           </div>
           <div
             className="subscription"
             style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handleClick}
           >
             <div
               style={{
@@ -759,7 +676,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#0066FF",
+                  backgroundColor: "#A2A4A7",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -769,13 +686,14 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                JOIN
+                Leave
               </Button>
             </div>
           </div>
           <div
             className="subscription"
             style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handleClick}
           >
             <div
               style={{
@@ -859,7 +777,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#0066FF",
+                  backgroundColor: "#A2A4A7",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -869,13 +787,14 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                JOIN
+                Leave
               </Button>
             </div>
           </div>
           <div
             className="subscription"
             style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handleClick}
           >
             <div
               style={{
@@ -961,7 +880,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#0066FF",
+                  backgroundColor: "#A2A4A7",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -971,7 +890,7 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                JOIN
+                Leave
               </Button>
             </div>
           </div>

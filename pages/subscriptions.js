@@ -34,12 +34,15 @@ export default function Subscriptions() {
 
   const handleCreate = () => {
     create ? setCreate(false) : setCreate(true);
+    if (pop2) {
+      setPop2(false);
+    }
   };
 
   const handleClick2 = () => {
     pop2 ? setPop2(false) : setPop2(true);
-    if (pop) {
-      setPop(false);
+    if (create) {
+      setCreate(false);
     }
   };
 
@@ -50,73 +53,6 @@ export default function Subscriptions() {
   const backHome = () => {
     router.push("/");
   };
-
-  const subscriptionBox = (
-    <div className="subscription">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
-      >
-        <h3 className="subService">Service</h3>
-        <div
-          style={{
-            textAlign: "right",
-            paddingTop: "3%",
-            paddingRight: "3%",
-          }}
-        >
-          <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
-            $4.26
-          </h3>
-          <p style={{ fontSize: "80%", margin: "0" }}>from $5/month</p>
-        </div>
-      </div>
-      <div className="subLowerContainer">
-        <div className="subInternalContainer">
-          <p>@username</p>
-          <FiberManualRecordIcon
-            style={{
-              width: "10%",
-              fontSize: "50%",
-              position: "absolute",
-              top: "65%",
-              left: "25%",
-            }}
-          ></FiberManualRecordIcon>
-          <p>4/6 Subscribed</p>
-          <FiberManualRecordIcon
-            style={{
-              width: "10%",
-              fontSize: "50%",
-              position: "absolute",
-              top: "65%",
-              left: "60%",
-            }}
-          ></FiberManualRecordIcon>
-          <p>expires 01/01/02</p>
-        </div>
-        <Button
-          variant="filled"
-          onClick={handleClick}
-          style={{
-            color: "white",
-            backgroundColor: "#0066FF",
-            width: " 10%",
-            height: "75%",
-            borderRadius: "100px",
-            marginTop: "1%",
-            marginRight: "3%",
-            fontSize: "75%",
-          }}
-        >
-          JOIN
-        </Button>
-      </div>
-    </div>
-  );
 
   const dialogue = (
     <Dialog open={pop} maxWidth="md">
@@ -264,7 +200,7 @@ export default function Subscriptions() {
               fontSize: "40%",
               marginRight: "5%",
             }}
-            onClick={handleClick}
+            onClick={handleCreate}
           >
             CREATE NEW GROUP
           </Button>
@@ -458,6 +394,7 @@ export default function Subscriptions() {
               </p>
             </div>
             <Button
+              onClick={handleClick2}
               variant="filled"
               style={{
                 color: "white",
@@ -575,7 +512,9 @@ export default function Subscriptions() {
               <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
                 $4.26
               </h3>
-              <p style={{ fontSize: "80%", margin: "0" }}>from $8/month</p>
+              <p style={{ fontSize: "80%", margin: "0" }}>
+                originally $8/month
+              </p>
             </div>
           </div>
           <div className="subLowerContainer">
@@ -604,7 +543,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={handleClick}
+              onClick={backHome}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -639,7 +578,9 @@ export default function Subscriptions() {
               <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
                 $2.26
               </h3>
-              <p style={{ fontSize: "80%", margin: "0" }}>from $6.50/month</p>
+              <p style={{ fontSize: "80%", margin: "0" }}>
+                originally $6.50/month
+              </p>
             </div>
           </div>
           <div className="subLowerContainer">
@@ -668,7 +609,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={handleClick}
+              onClick={backHome}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -703,7 +644,9 @@ export default function Subscriptions() {
               <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
                 $8.26
               </h3>
-              <p style={{ fontSize: "80%", margin: "0" }}>from $25.50/month</p>
+              <p style={{ fontSize: "80%", margin: "0" }}>
+                originally $25.50/month
+              </p>
             </div>
           </div>
           <div className="subLowerContainer">
@@ -732,7 +675,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={handleClick}
+              onClick={backHome}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -767,7 +710,9 @@ export default function Subscriptions() {
               <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
                 $10.02
               </h3>
-              <p style={{ fontSize: "80%", margin: "0" }}>from $17.21/month</p>
+              <p style={{ fontSize: "80%", margin: "0" }}>
+                originally $17.21/month
+              </p>
             </div>
           </div>
           <div className="subLowerContainer">
@@ -796,7 +741,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={handleClick}
+              onClick={backHome}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -831,7 +776,9 @@ export default function Subscriptions() {
               <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
                 $20
               </h3>
-              <p style={{ fontSize: "80%", margin: "0" }}>from $25/month</p>
+              <p style={{ fontSize: "80%", margin: "0" }}>
+                originally $25/month
+              </p>
             </div>
           </div>
           <div className="subLowerContainer">
@@ -860,7 +807,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={handleClick}
+              onClick={backHome}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -895,7 +842,9 @@ export default function Subscriptions() {
               <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
                 $8.14
               </h3>
-              <p style={{ fontSize: "80%", margin: "0" }}>from $12.81/month</p>
+              <p style={{ fontSize: "80%", margin: "0" }}>
+                originally $12.81/month
+              </p>
             </div>
           </div>
           <div className="subLowerContainer">
@@ -924,7 +873,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={handleClick}
+              onClick={backHome}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -959,7 +908,9 @@ export default function Subscriptions() {
               <h3 style={{ fontSize: "150%", margin: "0", fontWeight: "600" }}>
                 $2.66
               </h3>
-              <p style={{ fontSize: "80%", margin: "0" }}>from $3.10/month</p>
+              <p style={{ fontSize: "80%", margin: "0" }}>
+                originally $3.10/month
+              </p>
             </div>
           </div>
           <div className="subLowerContainer">
@@ -988,7 +939,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={handleClick}
+              onClick={backHome}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
