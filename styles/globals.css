@@ -241,3 +241,11 @@ a {
   border-radius: 10px;
 }
 
+.request {
+  display: flex;
+  width: 99%;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  margin-left: 1%;
+  margin-top: 2%;
+}

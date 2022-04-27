@@ -26,6 +26,7 @@ import { auth } from "../firebase-config";
 
 export default function Dashboard() {
   const [pop, setPop] = React.useState(false);
+  const [requests, setRequests] = React.useState(false);
   const [mode, setPublic] = React.useState(false);
   const router = useRouter();
   const user = auth.currentUser;
@@ -36,6 +37,10 @@ export default function Dashboard() {
   } else {
     word = "user";
   }
+
+  const handleRequests = () => {
+    requests ? setRequests(false) : setRequests(true);
+  };
 
   const payments = () => {
     if (user) {
@@ -85,6 +90,92 @@ export default function Dashboard() {
     width: "100%",
     marginTop: "10%",
   };
+
+  const dialogue2 = (
+    <Dialog open={requests} maxWidth="md">
+      <DialogContent style={{backgroundColor: "white"}}>
+      <div>
+        <div style={{ display: "flex", justifyContent: "space-between"}}>
+            <h1 style={{ marginLeft: "1%" }}>Your Requests</h1>
+            <CloseIcon onClick={handleRequests}></CloseIcon>
+        </div>
+        <input
+            placeholder="Search"
+            type="text"
+            style={{
+              background: "white",
+              color: "black",
+              textTransform: "capitalize",
+              width: "99%",
+              height: "2em",
+              outline: "none",
+              border: "none",
+              borderRadius: "20px",
+              marginLeft: "1.2%",
+              marginBottom: "2%",
+              boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+            }}
+          ></input>
+          <div className="request">
+            <img
+              src="/amy.png"
+              style={{ marginRight: "5%", 
+                       width: "10%",
+                       height: "40%", 
+                       margin: "1.5%"
+                      }}
+            ></img>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Amy La has requested to follow you.&nbsp;</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+          </div>
+          <div className="request">
+            <img
+              src="/Mary.png"
+              style={{ marginRight: "5%", 
+                       width: "10%",
+                       height: "40%", 
+                       margin: "1.5%"
+                      }}
+            ></img>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Mary W. has requested to follow you.</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+          </div>
+          <div className="request">
+            <img
+              src="/Jalen.png"
+              style={{ marginRight: "5%", 
+                       width: "10%",
+                       height: "40%", 
+                       margin: "1.5%"
+                      }}
+            ></img>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jalen L. has requested to follow you.</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+          </div>
+          <div className="request">
+            <img
+              src="/Jonathan.png"
+              style={{ marginRight: "5%", 
+                       width: "10%",
+                       height: "40%", 
+                       margin: "1.5%"
+                      }}
+            ></img>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jon P. has requested to follow you. &nbsp;&nbsp;</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+          </div>
+          <div style={{textAlign: "center", marginTop: "5%"}}>
+            <p style={{color: "grey", fontSize: "150%"}}>View More</p>
+          </div>
+      </div>
+      </DialogContent>
+    </Dialog>
+  );
 
   const dialogue = (
     <Dialog open={pop} maxWidth="md">
@@ -279,8 +370,10 @@ export default function Dashboard() {
               width: "40%",
             }}
           >
-            <div
+            {dialogue2}
+            <button
               style={{
+                backgroundColor: "white",
                 fontSize: "90%",
                 boxShadow: "2px 2px 2px 2px lightgray",
                 borderRadius: "40px",
@@ -288,7 +381,9 @@ export default function Dashboard() {
                 display: "flex",
                 justifyContent: "flex-start",
                 alignItems: "center",
+                border: "none"
               }}
+              onClick={handleRequests}
             >
               <h3 style={{ margin: "0", marginLeft: "3%" }}>Requests</h3>
               <FiberManualRecordIcon
@@ -301,7 +396,7 @@ export default function Dashboard() {
               <ArrowForwardIosIcon
                 style={{ fontSize: "70%", marginLeft: "70%" }}
               ></ArrowForwardIosIcon>
-            </div>
+            </button>
             <div
               style={{
                 width: "100%",
