@@ -16,14 +16,17 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import Checkbox from "@mui/material/Checkbox";
 import { useRouter } from "next/router";
+import { auth } from "../firebase-config";
 
 export default function Subscriptions() {
   const [pop, setPop] = React.useState(false);
   const [pop2, setPop2] = React.useState(false);
   const [create, setCreate] = React.useState(false);
   const [checked, setChecked] = React.useState(false);
+  const [join, setJoin] = React.useState(false);
 
   const router = useRouter();
+  const user = auth.currentUser;
 
   const handleClick = () => {
     pop ? setPop(false) : setPop(true);
@@ -51,7 +54,18 @@ export default function Subscriptions() {
   };
 
   const backHome = () => {
-    router.push("/");
+    router.push("/dashboard");
+  };
+
+  const handleJoin = () => {
+    join ? setJoin(false) : setJoin(true);
+    if (pop) {
+      setPop(false);
+    }
+  };
+
+  const closeJoin = () => {
+    setJoin(false);
   };
 
   const dialogue = (
@@ -68,6 +82,7 @@ export default function Subscriptions() {
             width="700%"
             height="100%"
             style={{ marginRight: "5%" }}
+            alt="members"
           ></Image>
           <div
             style={{
@@ -111,43 +126,65 @@ export default function Subscriptions() {
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
           <div style={{ width: "40%" }}>
             <h4>Available Subscriptions</h4>
-            <Image src="/numAvil.svg" width="200%" height="200%"></Image>
+            <Image
+              src="/numAvail.svg"
+              width="200%"
+              height="200%"
+              alt="number"
+            ></Image>
           </div>
           <div style={{ width: "40%" }}>
             <h4>Group Status</h4>
             <div
               style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "50%",
-                height: "15%",
-                boxShadow: "1px 1px 1px 1px lightgray",
-                borderRadius: "10px",
-                fontWeight: "600",
-              }}
-            >
-              <p style={{ margin: "0" }}>Public</p>
-              <PublicIcon
-                style={{
-                  fontSize: "90%",
-                  marginLeft: "5%",
-                }}
-              ></PublicIcon>
-            </div>
-            <Button
-              onClick={handleClick2}
-              variant="filled"
-              style={{
-                backgroundColor: "#0066FF",
-                borderRadius: "100px",
                 width: "100%",
-                marginTop: "20%",
-                color: "white",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
               }}
             >
-              Join Group
-            </Button>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "50%",
+                  height: "15%",
+                  boxShadow: "1px 1px 1px 1px lightgray",
+                  borderRadius: "10px",
+                  fontWeight: "600",
+                  padding: "1.5%",
+                }}
+              >
+                <p style={{ margin: "0" }}>Public</p>
+                <PublicIcon
+                  style={{
+                    fontSize: "90%",
+                    marginLeft: "5%",
+                  }}
+                ></PublicIcon>
+              </div>
+              <p style={{ fontSize: "80%", color: "gray" }}>
+                Change Privacy &nbsp;&gt;
+              </p>
+            </div>
+            {user ? (
+              <Button
+                onClick={handleJoin}
+                variant="filled"
+                style={{
+                  backgroundColor: "#0066FF",
+                  borderRadius: "10px",
+                  width: "100%",
+                  marginTop: "20%",
+                  color: "white",
+                }}
+              >
+                Join Group
+              </Button>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </DialogContent>
@@ -223,6 +260,76 @@ export default function Subscriptions() {
       </DialogContent>
     </Dialog>
   );
+
+  const dialogueJoin = (
+    <Dialog open={join} maxWidth="md">
+      <DialogContent
+        style={{
+          backgroundColor: "white",
+          width: "100%",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <CloseIcon onClick={closeJoin}></CloseIcon>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            textAlign: "center",
+            margin: "5%",
+          }}
+        >
+          <h4 style={{ marginBottom: "20%" }}>
+            🎉 Success! Your request to join the group has been sent!
+          </h4>
+          <Image src="/plantLady.svg" width="200%" height="200%"></Image>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <Button
+            variant="filled"
+            style={{
+              backgroundColor: "#0066FF",
+              color: "white",
+              borderRadius: "100px",
+              width: "50%",
+              margin: "1%",
+              fontSize: "40%",
+              marginRight: "5%",
+            }}
+            onClick={closeJoin}
+          >
+            BACK TO EXPLORE
+          </Button>
+          <Button
+            variant="filled"
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              borderRadius: "100px",
+              width: "50%",
+              margin: "1%",
+              fontSize: "40%",
+              marginLeft: "5%",
+            }}
+            onClick={backHome}
+          >
+            RETURN HOMEPAGE
+          </Button>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
   return (
     <div
       style={{
@@ -234,6 +341,7 @@ export default function Subscriptions() {
     >
       {dialogue}
       {dialogue2}
+      {dialogueJoin}
       <Dialog open={create} maxWidth="md">
         <DialogContent style={{ backgroundColor: "white" }}>
           <div
@@ -412,20 +520,27 @@ export default function Subscriptions() {
           </div>
         </DialogContent>
       </Dialog>
-      <Button
-        onClick={handleCreate}
-        variant="text"
-        size="large"
-        style={{
-          color: "black",
-          position: "absolute",
-          right: "10%",
-          top: "3%",
-          background: "white",
-        }}
-      >
-        CREATE A GROUP +
-      </Button>
+      {user ? (
+        <Button
+          onClick={handleCreate}
+          variant="text"
+          size="large"
+          style={{
+            color: "white",
+            position: "absolute",
+            right: "10%",
+            top: "3%",
+            backgroundColor: "black",
+            fontSize: "70%",
+            width: "10%",
+          }}
+        >
+          CREATE A GROUP +
+        </Button>
+      ) : (
+        ""
+      )}
+
       <BurgerMenu></BurgerMenu>
       <div
         style={{
@@ -543,7 +658,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={backHome}
+              onClick={handleClick}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -609,7 +724,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={backHome}
+              onClick={handleClick}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -675,7 +790,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={backHome}
+              onClick={handleClick}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -741,7 +856,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={backHome}
+              onClick={handleClick}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -807,7 +922,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={backHome}
+              onClick={handleClick}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -873,7 +988,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={backHome}
+              onClick={handleClick}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",
@@ -939,7 +1054,7 @@ export default function Subscriptions() {
             </div>
             <Button
               variant="filled"
-              onClick={backHome}
+              onClick={handleClick}
               style={{
                 color: "white",
                 backgroundColor: "#0066FF",

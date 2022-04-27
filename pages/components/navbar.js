@@ -35,6 +35,7 @@ export default function Navbar() {
             width="200%"
             height="50%"
             onClick={handleClick}
+            alt="logo"
           ></Image>
         </div>
         <div className="bar">
@@ -58,6 +59,7 @@ export default function Navbar() {
             width="200%"
             height="50%"
             onClick={handleClick}
+            alt="logo2"
           ></Image>
         </div>
         <div className="bar">
