@@ -106,7 +106,7 @@ export default function Home() {
             color: "#5B5B5B",
           }}
         >
-          Hassle-free and cheaper subscriptions at your finger tips.
+          Up to date information surrounding your subscription cost
         </h3>
         <div className="threeRow">
           <div className="oneOfThreeRow">
@@ -118,17 +118,17 @@ export default function Home() {
                 alt="vector"
               ></Image>
             </div>
-            <p className="oneOfThreeRowTitle">Information</p>
+            <p className="oneOfThreeRowTitle">Centralized</p>
             <p className="oneOfThreeRowText">
-              Provide us with your basic information and the subscription
-              services that you hold
+              A central place to keep track of payments of the subscription
+              services that you share
             </p>
           </div>
           <div className="oneOfThreeRow">
             <div className="imageBox">
               <Image src="/id.jpg" width="150%" height="120%" alt="id"></Image>
             </div>
-            <p className="oneOfThreeRowTitle">Identity Check</p>
+            <p className="oneOfThreeRowTitle">Identity Verification</p>
             <p className="oneOfThreeRowText">
               Provide us with your basic information and the subscription
               services that you hold
@@ -145,8 +145,8 @@ export default function Home() {
             </div>
             <p className="oneOfThreeRowTitle">Payment</p>
             <p className="oneOfThreeRowText">
-              Provide us with your basic information and the subscription
-              services that you hold
+              Significantly decrease the cost of subscription services so
+              everyone has access to services that they want
             </p>
           </div>
         </div>

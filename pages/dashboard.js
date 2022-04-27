@@ -458,11 +458,12 @@ export default function Dashboard() {
               </h4>
               <Divider></Divider>
               <p style={{ paddingLeft: "5%" }}>
-                You have an upcoming payment of $3.21 on April 4, 2022
+                You have an upcoming payment of $3.21 on April 4, 2022.
               </p>
               <Divider></Divider>
               <p style={{ paddingLeft: "5%" }}>
-                Jonathan Phan left the group &quot;Netflix 24/7&quot;
+                Jonathan Phan left the group &quot;Netflix 24/7&quot; on April
+                3, 2022.
               </p>
               <Divider></Divider>
               <p style={{ paddingLeft: "5%" }}>

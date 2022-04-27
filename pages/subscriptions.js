@@ -670,7 +670,7 @@ export default function Subscriptions() {
                 fontSize: "75%",
               }}
             >
-              JOIN
+              {user ? "JOIN" : "VIEW"}
             </Button>
           </div>
         </div>
@@ -736,7 +736,7 @@ export default function Subscriptions() {
                 fontSize: "75%",
               }}
             >
-              JOIN
+              {user ? "JOIN" : "VIEW"}
             </Button>
           </div>
         </div>
@@ -802,7 +802,7 @@ export default function Subscriptions() {
                 fontSize: "75%",
               }}
             >
-              JOIN
+              {user ? "JOIN" : "VIEW"}
             </Button>
           </div>
         </div>
@@ -868,7 +868,7 @@ export default function Subscriptions() {
                 fontSize: "75%",
               }}
             >
-              JOIN
+              {user ? "JOIN" : "VIEW"}
             </Button>
           </div>
         </div>
@@ -934,7 +934,7 @@ export default function Subscriptions() {
                 fontSize: "75%",
               }}
             >
-              JOIN
+              {user ? "JOIN" : "VIEW"}
             </Button>
           </div>
         </div>
@@ -1000,7 +1000,7 @@ export default function Subscriptions() {
                 fontSize: "75%",
               }}
             >
-              JOIN
+              {user ? "JOIN" : "VIEW"}
             </Button>
           </div>
         </div>
@@ -1066,7 +1066,7 @@ export default function Subscriptions() {
                 fontSize: "75%",
               }}
             >
-              JOIN
+              {user ? "JOIN" : "VIEW"}
             </Button>
           </div>
         </div>

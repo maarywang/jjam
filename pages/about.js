@@ -80,7 +80,7 @@ export default function About() {
         <h1
           style={{
             width: "80%",
-            textAlign: "left",
+            textAlign: "center",
             fontWeight: "700",
             fontSize: "250%",
             marginTop: "4%",
@@ -362,7 +362,7 @@ export default function About() {
               onSubmit={handleSubmit}
               disabled={state.submitting}
             >
-              SUBMIT
+              SEND
             </Button>
           </form>
         </div>

@@ -55,7 +55,7 @@ export default function Messages() {
               >
                 $119.99
               </p>
-              <p style={{ color: "black", fontSize: "90%" }}>in Submerge</p>
+              <p style={{ color: "black", fontSize: "90%" }}>in SubMerge</p>
             </div>
             <button
               style={{
@@ -71,6 +71,7 @@ export default function Messages() {
                 border: "none",
                 boxShadow:
                   "0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19)",
+                marginTop: "4%",
               }}
             >
               Transfer Money
@@ -113,10 +114,16 @@ export default function Messages() {
             </div>
             <div className="history" style={{ marginBottom: "5%" }}>
               <br></br>
-              <p style={{ fontSize: "130%", marginLeft: "8%", fontWeight: "200%" }}>
+              <p
+                style={{
+                  fontSize: "130%",
+                  marginLeft: "8%",
+                  fontWeight: "200%",
+                }}
+              >
                 <b>
-                Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+                  Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
                 </b>
               </p>
               <hr></hr>
@@ -156,11 +163,15 @@ export default function Messages() {
                 >
                   -$2.51
                 </p>
-                <p style={{ fontSize: "120%", marginLeft: "15%" }}>Jalen Layfield</p>
+                <p style={{ fontSize: "120%", marginLeft: "15%" }}>
+                  Jalen Layfield
+                </p>
               </div>
               <div style={{ display: "flex" }}>
                 <p style={{ fontSize: "120%", marginLeft: "6%" }}>01-18-22</p>
-                <p style={{ fontSize: "120%", marginLeft: "13%" }}>SPOTIFY PREMIUM</p>
+                <p style={{ fontSize: "120%", marginLeft: "13%" }}>
+                  SPOTIFY PREMIUM
+                </p>
                 <p
                   style={{
                     fontSize: "120%",
@@ -174,25 +185,37 @@ export default function Messages() {
               </div>
               <div style={{ display: "flex" }}>
                 <p style={{ fontSize: "120%", marginLeft: "6%" }}>01-02-22</p>
-                <p style={{ fontSize: "120%", marginLeft: "14%" }}>AMAZON PRIME</p>
+                <p style={{ fontSize: "120%", marginLeft: "14%" }}>
+                  AMAZON PRIME
+                </p>
                 <p
-                  style={{ fontSize: "120%", marginLeft: "15.5%", color: "green" }}
+                  style={{
+                    fontSize: "120%",
+                    marginLeft: "15.5%",
+                    color: "green",
+                  }}
                 >
                   +$3.12
                 </p>
-                <p style={{ fontSize: "120%", marginLeft: "16.5%" }}>Lindsey Li</p>
+                <p style={{ fontSize: "120%", marginLeft: "16.5%" }}>
+                  Lindsey Li
+                </p>
               </div>
               <div style={{ display: "flex" }}>
                 <p style={{ fontSize: "120%", marginLeft: "6%" }}>12-26-21</p>
-                <p style={{ fontSize: "120%", marginLeft: "17%" }}>
-                  NETFLIX
-                </p>
+                <p style={{ fontSize: "120%", marginLeft: "17%" }}>NETFLIX</p>
                 <p
-                  style={{ fontSize: "120%", marginLeft: "18.5%", color: "Red" }}
+                  style={{
+                    fontSize: "120%",
+                    marginLeft: "18.5%",
+                    color: "Red",
+                  }}
                 >
                   -$19.99
                 </p>
-                <p style={{ fontSize: "120%", marginLeft: "15%" }}>Rick Johnson</p>
+                <p style={{ fontSize: "120%", marginLeft: "15%" }}>
+                  Rick Johnson
+                </p>
               </div>
             </div>
           </div>
