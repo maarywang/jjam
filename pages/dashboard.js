@@ -683,7 +683,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#A2A4A7",
+                  backgroundColor: "#0066FF",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -792,7 +792,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#A2A4A7",
+                  backgroundColor: "#0066FF",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -893,7 +893,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#A2A4A7",
+                  backgroundColor: "#0066FF",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -994,7 +994,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#A2A4A7",
+                  backgroundColor: "#0066FF",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
@@ -1097,7 +1097,7 @@ export default function Dashboard() {
                 onClick={handleClick}
                 style={{
                   color: "white",
-                  backgroundColor: "#A2A4A7",
+                  backgroundColor: "#0066FF",
                   width: " 10%",
                   height: "75%",
                   borderRadius: "100px",
