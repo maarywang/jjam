@@ -93,13 +93,13 @@ export default function Dashboard() {
 
   const dialogue2 = (
     <Dialog open={requests} maxWidth="md">
-      <DialogContent style={{backgroundColor: "white"}}>
-      <div>
-        <div style={{ display: "flex", justifyContent: "space-between"}}>
+      <DialogContent style={{ backgroundColor: "white" }}>
+        <div>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
             <h1 style={{ marginLeft: "1%" }}>Your Requests</h1>
             <CloseIcon onClick={handleRequests}></CloseIcon>
-        </div>
-        <input
+          </div>
+          <input
             placeholder="Search"
             type="text"
             style={{
@@ -114,65 +114,177 @@ export default function Dashboard() {
               marginLeft: "1.2%",
               marginBottom: "2%",
               boxShadow:
-                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
             }}
           ></input>
           <div className="request">
             <img
               src="/amy.png"
-              style={{ marginRight: "5%", 
-                       width: "10%",
-                       height: "40%", 
-                       margin: "1.5%"
-                      }}
+              style={{
+                marginRight: "5%",
+                width: "10%",
+                height: "40%",
+                margin: "1.5%",
+              }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Amy La has requested to join your group.&nbsp;</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
-            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+            <p style={{ fontSize: "120%", marginTop: "5%", marginLeft: "3%" }}>
+              Amy La has requested to join your group.&nbsp;
+            </p>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "#0066FF",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "10%",
+                color: "white",
+              }}
+            >
+              Accept
+            </button>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "white",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "1%",
+              }}
+            >
+              Deny
+            </button>
           </div>
           <div className="request">
             <img
               src="/Mary.png"
-              style={{ marginRight: "5%", 
-                       width: "10%",
-                       height: "40%", 
-                       margin: "1.5%"
-                      }}
+              style={{
+                marginRight: "5%",
+                width: "10%",
+                height: "40%",
+                margin: "1.5%",
+              }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Mary W. has requested to join your group.</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
-            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+            <p style={{ fontSize: "120%", marginTop: "5%", marginLeft: "3%" }}>
+              Mary W. has requested to join your group.
+            </p>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "#0066FF",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "10%",
+                color: "white",
+              }}
+            >
+              Accept
+            </button>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "white",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "1%",
+              }}
+            >
+              Deny
+            </button>
           </div>
           <div className="request">
             <img
               src="/Jalen.png"
-              style={{ marginRight: "5%", 
-                       width: "10%",
-                       height: "40%", 
-                       margin: "1.5%"
-                      }}
+              style={{
+                marginRight: "5%",
+                width: "10%",
+                height: "40%",
+                margin: "1.5%",
+              }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jalen L. has requested to join your group.</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
-            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+            <p style={{ fontSize: "120%", marginTop: "5%", marginLeft: "3%" }}>
+              Jalen L. has requested to join your group.
+            </p>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "#0066FF",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "10%",
+                color: "white",
+              }}
+            >
+              Accept
+            </button>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "white",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "1%",
+              }}
+            >
+              Deny
+            </button>
           </div>
           <div className="request">
             <img
               src="/Jonathan.png"
-              style={{ marginRight: "5%", 
-                       width: "10%",
-                       height: "40%", 
-                       margin: "1.5%"
-                      }}
+              style={{
+                marginRight: "5%",
+                width: "10%",
+                height: "40%",
+                margin: "1.5%",
+              }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jon P. has requested to join your group. &nbsp;&nbsp;</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
-            <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
+            <p style={{ fontSize: "120%", marginTop: "5%", marginLeft: "3%" }}>
+              Jon P. has requested to join your group. &nbsp;&nbsp;
+            </p>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "#0066FF",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "10%",
+                color: "white",
+              }}
+            >
+              Accept
+            </button>
+            <button
+              style={{
+                border: "none",
+                backgroundColor: "white",
+                borderRadius: "5px",
+                width: "15%",
+                height: "2em",
+                marginTop: "5%",
+                marginLeft: "1%",
+              }}
+            >
+              Deny
+            </button>
           </div>
-          <div style={{textAlign: "center", marginTop: "5%"}}>
-            <p style={{color: "grey", fontSize: "150%"}}>View More</p>
+          <div style={{ textAlign: "center", marginTop: "5%" }}>
+            <p style={{ color: "grey", fontSize: "150%" }}>View More</p>
           </div>
-      </div>
+        </div>
       </DialogContent>
     </Dialog>
   );
@@ -258,6 +370,16 @@ export default function Dashboard() {
                 }}
               ></PublicIcon>
             </div>
+            <Button
+              variant="filled"
+              style={{
+                border: "1px solid lightgray",
+                width: "100%",
+                marginTop: "20%",
+              }}
+            >
+              LEAVE
+            </Button>
           </div>
         </div>
       </DialogContent>
@@ -381,7 +503,7 @@ export default function Dashboard() {
                 display: "flex",
                 justifyContent: "flex-start",
                 alignItems: "center",
-                border: "none"
+                border: "none",
               }}
               onClick={handleRequests}
             >
