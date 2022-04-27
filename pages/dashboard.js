@@ -142,7 +142,7 @@ export default function Dashboard() {
                 color: "white",
               }}
             >
-              ACEPT
+              ACCEPT
             </button>
             <button
               style={{
@@ -693,7 +693,7 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                Leave
+                VIEW
               </Button>
             </div>
           </div>
@@ -802,7 +802,7 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                Leave
+                VIEW
               </Button>
             </div>
           </div>
@@ -903,7 +903,7 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                Leave
+                VIEW
               </Button>
             </div>
           </div>
@@ -1004,7 +1004,7 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                Leave
+                VIEW
               </Button>
             </div>
           </div>
@@ -1107,7 +1107,7 @@ export default function Dashboard() {
                   padding: "2px",
                 }}
               >
-                Leave
+                VIEW
               </Button>
             </div>
           </div>
