@@ -142,7 +142,7 @@ export default function Dashboard() {
                 color: "white",
               }}
             >
-              Accept
+              ACEPT
             </button>
             <button
               style={{
@@ -155,7 +155,7 @@ export default function Dashboard() {
                 marginLeft: "1%",
               }}
             >
-              Deny
+              DENY
             </button>
           </div>
           <div className="request">
@@ -183,7 +183,7 @@ export default function Dashboard() {
                 color: "white",
               }}
             >
-              Accept
+              ACCEPT
             </button>
             <button
               style={{
@@ -196,7 +196,7 @@ export default function Dashboard() {
                 marginLeft: "1%",
               }}
             >
-              Deny
+              DENY
             </button>
           </div>
           <div className="request">
@@ -224,7 +224,7 @@ export default function Dashboard() {
                 color: "white",
               }}
             >
-              Accept
+              ACCEPT
             </button>
             <button
               style={{
@@ -237,7 +237,7 @@ export default function Dashboard() {
                 marginLeft: "1%",
               }}
             >
-              Deny
+              DENY
             </button>
           </div>
           <div className="request">
@@ -265,7 +265,7 @@ export default function Dashboard() {
                 color: "white",
               }}
             >
-              Accept
+              ACCEPT
             </button>
             <button
               style={{
@@ -278,7 +278,7 @@ export default function Dashboard() {
                 marginLeft: "1%",
               }}
             >
-              Deny
+              DENY
             </button>
           </div>
           <div style={{ textAlign: "center", marginTop: "5%" }}>
