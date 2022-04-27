@@ -160,7 +160,7 @@ export default function Dashboard() {
           </div>
           <div className="request">
             <img
-              src="/Mary.png"
+              src="/mary.png"
               style={{
                 marginRight: "5%",
                 width: "10%",
@@ -201,7 +201,7 @@ export default function Dashboard() {
           </div>
           <div className="request">
             <img
-              src="/Jalen.png"
+              src="/jalen.png"
               style={{
                 marginRight: "5%",
                 width: "10%",
@@ -242,7 +242,7 @@ export default function Dashboard() {
           </div>
           <div className="request">
             <img
-              src="/Jonathan.png"
+              src="/jonathan.png"
               style={{
                 marginRight: "5%",
                 width: "10%",
