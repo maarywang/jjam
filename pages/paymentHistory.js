@@ -113,84 +113,86 @@ export default function Messages() {
             </div>
             <div className="history" style={{ marginBottom: "5%" }}>
               <br></br>
-              <p style={{ fontSize: "130%", marginLeft: "8%" }}>
-                Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment
-                Amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+              <p style={{ fontSize: "130%", marginLeft: "8%", fontWeight: "200%" }}>
+                <b>
+                Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+                </b>
               </p>
               <hr></hr>
               <div style={{ display: "flex" }}>
-                <p style={{ fontSize: "130%", marginLeft: "5%" }}>4-12-2022</p>
+                <p style={{ fontSize: "120%", marginLeft: "6%" }}>04-12-22</p>
+                <p style={{ fontSize: "120%", marginLeft: "17%" }}>NETFLIX</p>
                 <p
                   style={{
-                    fontSize: "130%",
-                    marginLeft: "17%",
+                    fontSize: "120%",
+                    marginLeft: "18%",
                     color: "green",
                   }}
                 >
                   +$19.99
                 </p>
-                <p style={{ fontSize: "130%", marginLeft: "25%" }}>Hulu</p>
-                <p style={{ fontSize: "130%", marginLeft: "17%" }}>Mary Wang</p>
+                <p style={{ fontSize: "120%", marginLeft: "16%" }}>Mary Wang</p>
               </div>
               <div style={{ display: "flex" }}>
-                <p style={{ fontSize: "130%", marginLeft: "5%" }}>4-08-2022</p>
+                <p style={{ fontSize: "120%", marginLeft: "6%" }}>03-05-22</p>
+                <p style={{ fontSize: "120%", marginLeft: "17.5%" }}>HULU</p>
                 <p
-                  style={{ fontSize: "130%", marginLeft: "17%", color: "red" }}
+                  style={{ fontSize: "120%", marginLeft: "20%", color: "red" }}
                 >
-                  -$14.99
+                  -$6.73
                 </p>
-                <p style={{ fontSize: "130%", marginLeft: "24%" }}>Spotify</p>
-                <p style={{ fontSize: "130%", marginLeft: "16%" }}>Mary Wang</p>
+                <p style={{ fontSize: "120%", marginLeft: "17%" }}>Jon Phan</p>
               </div>
               <div style={{ display: "flex" }}>
-                <p style={{ fontSize: "130%", marginLeft: "5%" }}>4-05-2022</p>
+                <p style={{ fontSize: "120%", marginLeft: "6%" }}>02-11-22</p>
+                <p style={{ fontSize: "120%", marginLeft: "17%" }}>HBO MAX</p>
                 <p
                   style={{
-                    fontSize: "130%",
-                    marginLeft: "17%",
+                    fontSize: "120%",
+                    marginLeft: "18%",
+                    color: "red",
+                  }}
+                >
+                  -$2.51
+                </p>
+                <p style={{ fontSize: "120%", marginLeft: "15%" }}>Jalen Layfield</p>
+              </div>
+              <div style={{ display: "flex" }}>
+                <p style={{ fontSize: "120%", marginLeft: "6%" }}>01-18-22</p>
+                <p style={{ fontSize: "120%", marginLeft: "13%" }}>SPOTIFY PREMIUM</p>
+                <p
+                  style={{
+                    fontSize: "120%",
+                    marginLeft: "14%",
                     color: "green",
                   }}
                 >
-                  +$4.99
+                  +$8.51
                 </p>
-                <p style={{ fontSize: "130%", marginLeft: "24.5%" }}>Disney+</p>
-                <p style={{ fontSize: "130%", marginLeft: "15%" }}>Mary Wang</p>
+                <p style={{ fontSize: "120%", marginLeft: "17.5%" }}>Amy La</p>
               </div>
               <div style={{ display: "flex" }}>
-                <p style={{ fontSize: "130%", marginLeft: "5%" }}>4-02-2022</p>
+                <p style={{ fontSize: "120%", marginLeft: "6%" }}>01-02-22</p>
+                <p style={{ fontSize: "120%", marginLeft: "14%" }}>AMAZON PRIME</p>
                 <p
-                  style={{
-                    fontSize: "130%",
-                    marginLeft: "17%",
-                    color: "green",
-                  }}
+                  style={{ fontSize: "120%", marginLeft: "15.5%", color: "green" }}
                 >
-                  +$4.99
+                  +$3.12
                 </p>
-                <p style={{ fontSize: "130%", marginLeft: "24%" }}>Peacock</p>
-                <p style={{ fontSize: "130%", marginLeft: "15%" }}>Mary Wang</p>
+                <p style={{ fontSize: "120%", marginLeft: "16.5%" }}>Lindsey Li</p>
               </div>
               <div style={{ display: "flex" }}>
-                <p style={{ fontSize: "130%", marginLeft: "5%" }}>4-01-2022</p>
+                <p style={{ fontSize: "120%", marginLeft: "6%" }}>12-26-21</p>
+                <p style={{ fontSize: "120%", marginLeft: "17%" }}>
+                  NETFLIX
+                </p>
                 <p
-                  style={{ fontSize: "130%", marginLeft: "17%", color: "Red" }}
+                  style={{ fontSize: "120%", marginLeft: "18.5%", color: "Red" }}
                 >
-                  -$24.99
+                  -$19.99
                 </p>
-                <p style={{ fontSize: "130%", marginLeft: "25%" }}>Adobe</p>
-                <p style={{ fontSize: "130%", marginLeft: "15%" }}>Mary Wang</p>
-              </div>
-              <div style={{ display: "flex" }}>
-                <p style={{ fontSize: "130%", marginLeft: "5%" }}>4-01-2022</p>
-                <p
-                  style={{ fontSize: "130%", marginLeft: "17%", color: "Red" }}
-                >
-                  -$10.99
-                </p>
-                <p style={{ fontSize: "130%", marginLeft: "22%" }}>
-                  Amazon Prime
-                </p>
-                <p style={{ fontSize: "130%", marginLeft: "11%" }}>Mary Wang</p>
+                <p style={{ fontSize: "120%", marginLeft: "15%" }}>Rick Johnson</p>
               </div>
             </div>
           </div>

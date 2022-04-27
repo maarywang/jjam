@@ -126,8 +126,8 @@ export default function Dashboard() {
                        margin: "1.5%"
                       }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Amy La has requested to follow you.&nbsp;</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Amy La has requested to join your group.&nbsp;</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
             <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
           </div>
           <div className="request">
@@ -139,8 +139,8 @@ export default function Dashboard() {
                        margin: "1.5%"
                       }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Mary W. has requested to follow you.</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Mary W. has requested to join your group.</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
             <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
           </div>
           <div className="request">
@@ -152,8 +152,8 @@ export default function Dashboard() {
                        margin: "1.5%"
                       }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jalen L. has requested to follow you.</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jalen L. has requested to join your group.</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
             <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
           </div>
           <div className="request">
@@ -165,8 +165,8 @@ export default function Dashboard() {
                        margin: "1.5%"
                       }}
             ></img>
-            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jon P. has requested to follow you. &nbsp;&nbsp;</p>
-            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "15%"}}>Accept</button>
+            <p style ={{fontSize: "120%", marginTop: "5%", marginLeft: "3%"}}>Jon P. has requested to join your group. &nbsp;&nbsp;</p>
+            <button style={{border: "none", backgroundColor: "#0066FF", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "10%", color: "white"}}>Accept</button>
             <button style={{border: "none", backgroundColor: "white", borderRadius: "5px", width: "15%", height: "2em", marginTop: "5%", marginLeft: "1%"}}>Deny</button>
           </div>
           <div style={{textAlign: "center", marginTop: "5%"}}>
